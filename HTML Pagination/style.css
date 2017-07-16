@@ -1,0 +1,34 @@
+h1 {
+	text-align: center;
+}
+
+ul.pagination {
+    padding: 0;
+	margin-left: 41%; /*Adjusts place*/
+}
+
+ul.pagination li {
+	display: inline;  /*Makes list horizontal*/
+}
+
+ul.pagination li a {
+	text-decoration: none; /*Removes undelining*/
+	color: black;
+	float: left;
+	border-radius: 3px;
+	padding: 8px 16px;	   /*Adjusts the gaps*/
+
+}
+
+/*styles for currently visiting page links*/
+ul.pagination li a.active {
+    background-color: #CF5C3F;
+    color: white;
+    border-radius: 5px;
+}
+
+/*styles for the othe pages with the currently visiting pages*/
+ul.pagination li a:hover:not(active){
+	background-color: #ddd;
+}
+
