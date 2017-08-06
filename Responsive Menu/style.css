@@ -1,0 +1,39 @@
+/*Strip the ul of padding and list styling*/
+ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+
+}
+
+/*Create a horizontal list with spacing*/
+li {
+    display:inline-block;
+    float: left;
+}
+
+/*Style for menu links*/
+li a {
+    display:block;
+    min-width:140px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    background: #2f3036;
+    text-decoration: none;
+}
+/*Hover state for links*/
+li:hover a {
+    background: #3498db;
+}
+
+
+/*Responsive Styles*/
+@media screen and (max-width : 760px){
+
+    /*Make all menu links full width*/
+    ul li, li a {
+        width: 100%;
+    }
+}
